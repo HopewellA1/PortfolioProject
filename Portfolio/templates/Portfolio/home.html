@@ -88,13 +88,20 @@
           </div>
         </div>
       </nav>
+      <div class="text-center container">
+        <div><h2>Yonela Sitshaka</h2></div>
+        <div>
+       {% load static %}
+        <img width="inherit" height=400px src="{% static 'Portfolio/MyProfile.jpg'%}" style="border-radius:50%; border:solid 3px; black;box-shadow: 15px 15px 5px lightblue;"/>
+      </div>
       <hr/>
-      <div style="overflow:hidden;overflow:scroll;overflow-y:scroll">
-                
-        <div class="raw" style="display:flex;flex-direction: column">
+
+      <div style="">
+              <div class="text-center"><h2> Projects</h2></div>  
+        <div class="" style="display: grid;  grid-template-columns: auto auto auto;padding: 10px;">
             {% for item in project %}
 
-                <div class="col-md-4 text-center container" style="border:solid 2px black;height:500px;overflow:hidden;overflow:scroll;overflow-x:scroll;overflow-y:auto;">
+                <div class=" text-center container grid-item" style="padding: 20px;border:solid 2px black;height:500px;overflow:hidden;overflow:scroll;overflow-x:scroll;overflow-y:auto;">
                     <div id="projectTitle">
                         <h3>{{item.title}}</h3>
                     </div>
@@ -120,7 +127,11 @@
                     </div>
                      {% endif %}
                 </div>
-                <br/>
+
+                
+                
+                </div>
+                
 
 
             {% endfor %}

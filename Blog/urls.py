@@ -7,5 +7,6 @@ from django.conf import settings
 urlpatterns = [
    # path('admin/', admin.site.urls),
     path('',views.home,name='Home'),
+    path('<int:blog_id>/',views.blogDetail,name='blogDetail')
     #path('blog/', include('blog.urls'))
 ]

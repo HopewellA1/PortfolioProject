@@ -6,6 +6,6 @@ from django.db import models
 
 class blog(models.Model):
     title = models.CharField(max_length=300)
-    description = models.TextField(max_length=1000)
+    description = models.TextField()
     date = models.DateField()
     

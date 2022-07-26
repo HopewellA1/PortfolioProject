@@ -55,7 +55,8 @@
         </div>
       </nav>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          {% load static %}
+          <a class="navbar-brand" href="{% static 'Portfolio/YonelaSitshakaResume2022.jpg'%}"> Download Resume</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -92,7 +93,7 @@
       <div class="text-center container">
         <div><h2>Yonela Sitshaka</h2></div>
         <div>
-       {% load static %}
+       
         <img width="inherit" height=400px src="{% static 'Portfolio/MyProfile.jpg'%}" style="border-radius:50%; border:solid 3px; black;box-shadow: 15px 15px 5px lightblue;"/>
       </div>
       <hr/>

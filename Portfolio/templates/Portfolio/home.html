@@ -25,7 +25,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand btn btn-primary btn-default" style="padding:1rem; border-radius:50%; color:white" href="#"><b>Profile.com</b></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,7 +56,7 @@
       </nav>
         <div class="container-fluid">
           {% load static %}
-          <a class="navbar-brand" href="{% static 'Portfolio/YonelaSitshakaResume2022.jpg'%}"> Download Resume</a>
+         
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -91,10 +91,15 @@
         </div>
       </nav>
       <div class="text-center container">
-        <div><h2>Yonela Sitshaka</h2></div>
-        <div>
+     
+        <div class="text-center" style="background-image: linear-gradient(#6ea0cd, #3030ff);box-shadow:30px 30px 10px lightblue;border-radius:60%">
+          <div><h2  style="color:white">Yonela Sitshaka</h2></div>
+          <div class="text-end">
+            <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% static 'Portfolio/YonelaSitshakaResume2022.pdf'%}"> Download Resume</a>
+          </div>
        
         <img width="inherit" height=400px src="{% static 'Portfolio/MyProfile.jpg'%}" style="border-radius:50%; border:solid 3px; black;box-shadow: 15px 15px 5px lightblue;"/>
+      
       </div>
       <hr/>
 

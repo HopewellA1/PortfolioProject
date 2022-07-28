@@ -37,39 +37,47 @@
          
             </li>
         </ul>
-    {% comment %} {% if user.is_authenticated %}
+     {% if user.is_authenticated %}
         <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item {{ current }}">
-                    <a class="nav-link" href="{% url 'current' %}">Current</a>
+                    <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% url 'current' %}">Current</a>
+                    
                 </li>
                 <li class="nav-item {{ completed }}">
-                    <a class="nav-link" href="{% url 'completed' %}">Completed</a>
+                    <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% url 'completed' %}">Completed</a>
+                    
+                   
                 </li>
                 <li class="nav-item {{ create }}">
-                    <a class="nav-link" href="{% url 'createtodo' %}">Create</a>
+                    <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% url 'createtodo' %}">Create</a>
+                   
+                    
                 </li>
 
         </ul>
-    {% endif %} {% endcomment %}   
-    {% comment %} <ul class="navbar-nav ml-auto">
+    {% endif %}   
+     <ul class="navbar-nav ml-auto">
             {% if user.is_authenticated %}
                 <li class="nav-item">
                     <a href="#" onclick="$('#signOutBtn').click()" class="nav-link">Logout</a>
                     <form style='display: none;' method="POST" action="{% url 'logoutuser' %}">
                         {% csrf_token %}
-                        <button id="signOutBtn" type="submit">Logout</button>
+                        <button type="submit" id="signOutBtn" class="navbar-brand btn btn-primary btn-default" style="color:white" >Logout</button>
+                       
                     </form>
                 </li>
             {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                    <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% url 'signup' %}">Sign Up</a>
+                    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    <a class="navbar-brand btn btn-primary btn-default" style="color:white"  href="{% url 'login' %}">Login</a>
+                    
                 </li>
             {% endif %}
-        </ul> {% endcomment %}
+        </ul> 
     </div>
 </div>
 </nav>
